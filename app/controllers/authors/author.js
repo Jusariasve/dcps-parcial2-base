@@ -1,8 +1,6 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-  msgDelete: null;
-
   actions:{
     deletePost(blogPost){
       let answer = confirm('Do you want delete this post?');
