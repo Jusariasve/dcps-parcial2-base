@@ -1,7 +1,7 @@
 {{outlet}}
 <p>
 <strong>{{model.username}}</strong></p>
-<img src="{{model.profilePicture}}" alt="">
+<img src='{{model.profilePicture}}' alt=''>
 <p><strong>First name: </strong>{{model.firstName}}</p>
 <p><strong>Last name: </strong>{{model.lastName}}</p>
 <p><strong>Email: </strong>{{model.email}}</p>
@@ -9,7 +9,7 @@
 <p><strong>Posts: </strong></p>
 
 {{#if model.posts}}
-<table class="table">
+<table class='table'>
   <thead>
     <tr>
     <th>title</th>

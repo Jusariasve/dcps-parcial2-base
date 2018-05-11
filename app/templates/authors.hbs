@@ -1,13 +1,13 @@
-<div class="authors">
+<div class='authors'>
   <h1>Authors</h1>
-  <div class="menu-authors">
+  <div class='menu-authors'>
     {{#each model as |author|}}
       {{#link-to 'authors.author' author.id class="link-author"}}
         {{author.username}}
       {{/link-to}}
     {{/each}}
   </div>
-  <div class="author-detail">
+  <div class='author-detail'>
     {{outlet}}
   </div>
 </div>

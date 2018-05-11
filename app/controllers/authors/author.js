@@ -1,6 +1,7 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+  msgDelete: null;
 
   actions:{
     deletePost(blogPost){
@@ -8,6 +9,10 @@ export default Controller.extend({
       if (answer == true) {
         this.get('model').posts.removeObject(blogPost);
         blogPost.destroyRecord();
+        alert('The post is deleted');
+      }
+      else{
+        alert('The post isnt deleted');
       }
     }
   }
